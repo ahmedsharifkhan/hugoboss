@@ -1,0 +1,9 @@
+<div class="pagination">
+    {{ if .HasPrev }}
+      <a class="newer" href="{{ .Prev.URL }}">Newer Posts</a>
+    {{ end }}
+    {{ if .HasNext }}
+      <a class="older" href="{{ .Next.URL }}">Older Posts</a>
+    {{ end }}
+  </div>
+  

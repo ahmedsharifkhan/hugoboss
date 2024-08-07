@@ -1,0 +1,26 @@
+baseURL = "https://ahmedsharifkhan.github.io/hugoboss"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "ananke"
+paginate = 10
+
+[params]
+  author = "Your Name"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+[params.search]
+  minWordLength = 3
+  noResultsMessage = "No results found"
+  searchPlaceholder = "Search..."
